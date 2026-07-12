@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-navy font-body antialiased;
+}
+
+h1, h2, h3, h4{
+  @apply font-display;
+}
+
+/* Urdu text should always use the Nastaliq face and flow right-to-left */
+.urdu {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  direction: rtl;
+  line-height: 2.1;
+}
+
+/* Visible keyboard focus ring everywhere, respecting the palette */
+:focus-visible {
+  outline: 3px solid #7C7E9D;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Soft chalk-like dashed divider used between sections */
+.chalk-divider {
+  border: none;
+  height: 2px;
+  background-image: repeating-linear-gradient(90deg, #949AB1 0, #949AB1 10px, transparent 10px, transparent 20px);
+  opacity: 0.5;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar for the chat widget */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background-color: #E2D4E0;
+  border-radius: 999px;
+}
