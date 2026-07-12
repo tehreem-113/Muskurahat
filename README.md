@@ -1,9 +1,5 @@
 # 🦷 Muskaan (مسکان) — Digital Oral Health Platform
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Muskaan Digital Oral Health Banner" width="100%" style="border-radius: 8px;" />
-</p>
-
 ## 📌 Project Overview 🌟
 
 **Muskaan (مسکان)** is a digital oral health platform prototype tailored for Pakistan. The project serves as a comprehensive dental health awareness application designed to bridge the gap between local communities and accessible oral healthcare. 
